@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.632e4d51.css",
-    "main.js": "/static/js/main.5c6300d3.js",
+    "main.js": "/static/js/main.0a733c89.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Profile.jpg": "/static/media/Profile.3416dce6d87379fe6f26.jpg",
     "static/media/ZEE5-Banner.png": "/static/media/ZEE5-Banner.a658149c13d37248542e.png",
     "static/media/Myntra-Banner.png": "/static/media/Myntra-Banner.6099b956d018d9d71f82.png",
     "static/media/Mailchimp-Banner.png": "/static/media/Mailchimp-Banner.dcf901e20da231b946ab.png",
+    "static/media/Coder1.png": "/static/media/Coder1.ac0698724b5ae7e2850f.png",
     "static/media/Node.png": "/static/media/Node.d6153fa85318a68d9bca.png",
     "static/media/VS-Code.png": "/static/media/VS-Code.19edc3fbac1c451f289d.png",
     "static/media/React.png": "/static/media/React.e71f4c5b0c4306d65355.png",
@@ -20,11 +21,11 @@
     "static/media/Express.png": "/static/media/Express.e3d4f9e5c8b469e45838.png",
     "index.html": "/index.html",
     "main.632e4d51.css.map": "/static/css/main.632e4d51.css.map",
-    "main.5c6300d3.js.map": "/static/js/main.5c6300d3.js.map",
+    "main.0a733c89.js.map": "/static/js/main.0a733c89.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.632e4d51.css",
-    "static/js/main.5c6300d3.js"
+    "static/js/main.0a733c89.js"
   ]
 }
