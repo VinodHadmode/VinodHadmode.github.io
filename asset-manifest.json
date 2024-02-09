@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.632e4d51.css",
-    "main.js": "/static/js/main.c322f542.js",
+    "main.js": "/static/js/main.86c23121.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Profile.jpg": "/static/media/Profile.3416dce6d87379fe6f26.jpg",
     "static/media/Vinod-Hadmode-Resume.pdf": "/static/media/Vinod-Hadmode-Resume.69bcb00f0fb9c342617f.pdf",
@@ -27,11 +27,11 @@
     "static/media/express1.png": "/static/media/express1.9b344d7469dbbdc76754.png",
     "index.html": "/index.html",
     "main.632e4d51.css.map": "/static/css/main.632e4d51.css.map",
-    "main.c322f542.js.map": "/static/js/main.c322f542.js.map",
+    "main.86c23121.js.map": "/static/js/main.86c23121.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.632e4d51.css",
-    "static/js/main.c322f542.js"
+    "static/js/main.86c23121.js"
   ]
 }
