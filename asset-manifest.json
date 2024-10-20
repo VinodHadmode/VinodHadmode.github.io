@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.90847cd5.css",
-    "main.js": "/static/js/main.b8334b4e.js",
+    "main.js": "/static/js/main.d665a106.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Profile.jpg": "/static/media/Profile.3416dce6d87379fe6f26.jpg",
     "static/media/Coder2.png": "/static/media/Coder2.7fb43721ad994decd58b.png",
     "static/media/EMS-Banner.png": "/static/media/EMS-Banner.3af7253e4c7d2e8e5ead.png",
     "static/media/ZEE5-Banner.png": "/static/media/ZEE5-Banner.a658149c13d37248542e.png",
     "static/media/SEPortfolio.png": "/static/media/SEPortfolio.ef7be100aa94319e9a22.png",
+    "static/media/ReduxToolkit.png": "/static/media/ReduxToolkit.6e66cd4ff6a497e88bde.png",
     "static/media/Node.png": "/static/media/Node.d6153fa85318a68d9bca.png",
     "static/media/VS-Code.png": "/static/media/VS-Code.19edc3fbac1c451f289d.png",
     "static/media/Vmart-Banner.JPG": "/static/media/Vmart-Banner.e657a5c29905bdb907ab.JPG",
@@ -15,21 +16,21 @@
     "static/media/ThunderClient.png": "/static/media/ThunderClient.b628c5d76a6ac6b75876.png",
     "static/media/React.png": "/static/media/React.e71f4c5b0c4306d65355.png",
     "static/media/CSS.png": "/static/media/CSS.8ea58d31a9d39dd59031.png",
+    "static/media/TailwindCSS.png": "/static/media/TailwindCSS.5ddb60003daadbd2e679.png",
     "static/media/Github.png": "/static/media/Github.4db267bb8233b124c575.png",
     "static/media/ChakraUI.png": "/static/media/ChakraUI.9132f0faa65f24438cfb.png",
     "static/media/Redux.png": "/static/media/Redux.b3b939c66aecf7d53967.png",
     "static/media/HTML5.png": "/static/media/HTML5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/Typescript.png": "/static/media/Typescript.af108db04a54d784da9b.png",
     "static/media/Javascript.png": "/static/media/Javascript.3dfb665e058d08c99f28.png",
-    "static/media/Express.png": "/static/media/Express.e3d4f9e5c8b469e45838.png",
-    "static/media/express1.png": "/static/media/express1.9b344d7469dbbdc76754.png",
+    "static/media/Express.png": "/static/media/Express.9b344d7469dbbdc76754.png",
     "index.html": "/index.html",
     "main.90847cd5.css.map": "/static/css/main.90847cd5.css.map",
-    "main.b8334b4e.js.map": "/static/js/main.b8334b4e.js.map",
+    "main.d665a106.js.map": "/static/js/main.d665a106.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90847cd5.css",
-    "static/js/main.b8334b4e.js"
+    "static/js/main.d665a106.js"
   ]
 }
