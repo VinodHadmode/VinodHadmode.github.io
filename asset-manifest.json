@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.632e4d51.css",
-    "main.js": "/static/js/main.a465fe98.js",
+    "main.css": "/static/css/main.90847cd5.css",
+    "main.js": "/static/js/main.f2b83b74.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Profile.jpg": "/static/media/Profile.3416dce6d87379fe6f26.jpg",
-    "static/media/Vinod-Hadmode-Resume.pdf": "/static/media/Vinod-Hadmode-Resume.69bcb00f0fb9c342617f.pdf",
     "static/media/Coder2.png": "/static/media/Coder2.7fb43721ad994decd58b.png",
     "static/media/EMS-Banner.png": "/static/media/EMS-Banner.3af7253e4c7d2e8e5ead.png",
     "static/media/ZEE5-Banner.png": "/static/media/ZEE5-Banner.a658149c13d37248542e.png",
     "static/media/SEPortfolio.png": "/static/media/SEPortfolio.ef7be100aa94319e9a22.png",
-    "static/media/Myntra-Banner.png": "/static/media/Myntra-Banner.6099b956d018d9d71f82.png",
-    "static/media/Mailchimp-Banner.png": "/static/media/Mailchimp-Banner.dcf901e20da231b946ab.png",
     "static/media/Node.png": "/static/media/Node.d6153fa85318a68d9bca.png",
     "static/media/VS-Code.png": "/static/media/VS-Code.19edc3fbac1c451f289d.png",
+    "static/media/Vmart-Banner.JPG": "/static/media/Vmart-Banner.e657a5c29905bdb907ab.JPG",
     "static/media/Bootstrap.png": "/static/media/Bootstrap.02e16df6861464872846.png",
     "static/media/ThunderClient.png": "/static/media/ThunderClient.b628c5d76a6ac6b75876.png",
     "static/media/React.png": "/static/media/React.e71f4c5b0c4306d65355.png",
@@ -26,12 +24,12 @@
     "static/media/Express.png": "/static/media/Express.e3d4f9e5c8b469e45838.png",
     "static/media/express1.png": "/static/media/express1.9b344d7469dbbdc76754.png",
     "index.html": "/index.html",
-    "main.632e4d51.css.map": "/static/css/main.632e4d51.css.map",
-    "main.a465fe98.js.map": "/static/js/main.a465fe98.js.map",
+    "main.90847cd5.css.map": "/static/css/main.90847cd5.css.map",
+    "main.f2b83b74.js.map": "/static/js/main.f2b83b74.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.632e4d51.css",
-    "static/js/main.a465fe98.js"
+    "static/css/main.90847cd5.css",
+    "static/js/main.f2b83b74.js"
   ]
 }
