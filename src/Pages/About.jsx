@@ -1,53 +1,162 @@
-import React from 'react'
-import styled from 'styled-components'
-import Profile from "../Images/Profile.jpg"
+import styled from "styled-components";
+import Profile from "../Images/Profile.jpeg";
 
 const About = () => {
   return (
-    <DIV>
+    <DIV id="about" className="about section">
       <h1>ABOUT ME !</h1>
-      <div className='about-container'>
-        <div className='about-left'>
-          <img src={Profile} alt="" width="350" height="350" />
+      <div className="about-container">
+        <div className="about-left">
+          <div className="profile-wrapper">
+            <img className="home-img" src={Profile} alt="Vinod Hadmode" />
+          </div>
         </div>
 
-        <div className='about-right'>
-
-          <h2>Hi, I am Vinod Hadmode</h2>
-          <p>Highly motivated MERN stack developer with a passion
-            for creating efficient, scalable, and user-friendly web
-            applications. Proficient in MERN stack with hands-on
-            experience in front-end and back-end development.
-            Seeking an opportunity to enhance my skills further</p>
+        <div className="about-right">
+          <h2 id="user-detail-name">Hi, I am Vinod Hadmode</h2>
+          <p id="user-detail-intro">
+            Full Stack Web Developer skilled in building scalable and responsive
+            applications using the MERN stack and .NET technologies. Experienced
+            in developing RESTful APIs and ensuring seamless frontend–backend
+            integration. Quick learner with strong problem-solving skills and a
+            passion for delivering user-friendly solutions.
+          </p>
         </div>
       </div>
-
-
     </DIV>
-  )
-}
+  );
+};
 
-export default About
+export default About;
 
 const DIV = styled.div`
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(25, 25, 27);
+  color: white;
+  text-align: center;
   margin: 40px;
-  align-items: center;
-  border: 1px solid red;
+  padding-bottom: 30px;
+
+  h1 {
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
 
   .about-container {
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 70%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    border: 1px solid green;
+    gap: 40px;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
   }
-  
-  .about-left img{
+
+  .profile-wrapper {
+    width: 320px; 
+    height: 320px;
     border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-`
+
+  .profile-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 15%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .profile-wrapper img:hover {
+    transform: scale(1.05);
+  }
+
+  .about-right {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #00bfa6;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+  }
+
+  /* Tablets and iPads */
+  @media (max-width: 1024px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about-right {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .profile-wrapper {
+      width: 250px;
+      height: 250px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  /* Small Mobiles */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .profile-wrapper {
+      width: 200px;
+      height: 200px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Extra Small Mobiles */
+  @media (max-width: 300px) {
+    .profile-wrapper {
+      width: 130px;
+      height: 130px;
+    }
+  }
+`;

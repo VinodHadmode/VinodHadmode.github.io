@@ -1,5 +1,6 @@
 import React from 'react'
-import { Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+// import { Routes, Route } from "react-router-dom"
 import Home from './Home'
 import Contact from './Contact'
 import Skills from './Skills'
@@ -8,7 +9,7 @@ import About from './About'
 
 function MainRoutes() {
     return (
-        <div>
+        <Router>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
@@ -17,7 +18,7 @@ function MainRoutes() {
                 <Route path="/projects" element={<Projects/>}/>
                 <Route path="*" element={<h2>404 Page not found</h2>}/>
             </Routes>
-        </div>
+        </Router>
     )
 }
 
