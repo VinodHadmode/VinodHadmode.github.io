@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import Profile from "../Images/Profile.jpeg";
+import Profile from '../Images/Profile.png'
 
 const About = () => {
   return (
     <DIV id="about" className="about section">
-      <h1>ABOUT ME !</h1>
+      <h1>ABOUT ME</h1>
       <div className="about-container">
         <div className="about-left">
           <div className="profile-wrapper">
@@ -13,7 +13,7 @@ const About = () => {
         </div>
 
         <div className="about-right">
-          <h2 id="user-detail-name">Hi, I am Vinod Hadmode</h2>
+          <h2 id="user-detail-name">Hi, I’m Vinod Hadmode</h2>
           <p id="user-detail-intro">
             Full Stack Web Developer skilled in building scalable and responsive
             applications using the MERN stack and .NET technologies. Experienced
@@ -66,11 +66,12 @@ const DIV = styled.div`
     height: 100%;
     object-fit: cover;
     object-position: 50% 15%;
+    transform: scale(1.05); 
     transition: transform 0.3s ease-in-out;
   }
 
   .profile-wrapper img:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
 
   .about-right {

@@ -1,28 +1,33 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleNavbar = () => setIsOpen(!isOpen);
+  const closeNavbar = () => setIsOpen(false);
 
-  const closeNavbar = () => {
-    setIsOpen(false);
-  };
+  // Track active section while scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "skills", "projects", "contact"];
+      const scrollPosition = window.scrollY + 80; // offset for navbar height
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
-  };
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
+    };
 
-  // const handleResume = () => {
-  //   const resumeURL = `https://drive.google.com/file/d/1I8Aqgbn9b5ImgMPGbkDh9YUPbLET8EKm/view?usp=drive_link`;
-  //   window.open(resumeURL, "_blank");
-  // };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <DIV className="navbar" id="nav-menu">
@@ -34,84 +39,25 @@ function Navbar() {
 
       <div className="navbar-menu">
         <ul className={`navbar-items ${isOpen ? "active" : ""}`}>
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `nav-link home ${isActive ? "active" : ""}`
-              }
-              onClick={() => {
-                scrollToSection("home");
-                closeNavbar();
-              }}
-            >
-              HOME
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `nav-link about ${isActive ? "active" : ""}`
-              }
-              onClick={() => {
-                scrollToSection("about");
-                closeNavbar();
-              }}
-            >
-              ABOUT
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/skills"
-              className={({ isActive }) =>
-                `nav-link skills ${isActive ? "active" : ""}`
-              } // Updated usage
-              onClick={() => {
-                scrollToSection("skills");
-                closeNavbar();
-              }}
-            >
-              SKILLS
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                `nav-link projects ${isActive ? "active" : ""}`
-              } // Updated usage
-              onClick={() => {
-                scrollToSection("projects");
-                closeNavbar();
-              }}
-            >
-              PROJECTS
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                `nav-link contact ${isActive ? "active" : ""}`
-              } // Updated usage
-              onClick={() => {
-                scrollToSection("contact");
-                closeNavbar();
-              }}
-            >
-              CONTACT
-            </NavLink>
-          </li>
+          {["home", "about", "skills", "projects", "contact"].map((item) => (
+            <li key={item}>
+              <HashLink
+                smooth
+                to={`/#${item}`}
+                className={`nav-link ${activeSection === item ? "active" : ""}`}
+                onClick={() => {
+                  setActiveSection(item);
+                  closeNavbar(); 
+                }}
+              >
+                {item.toUpperCase()}
+              </HashLink>
+            </li>
+          ))}
 
           <li>
             <a
-              href="https://drive.google.com/uc?id=1I8Aqgbn9b5ImgMPGbkDh9YUPbLET8EKm&export=download"
+              href="https://drive.google.com/uc?id=1cILEyGW2m9utCV_XUp9UIcttO9nUnxYd&export=download"
               className="nav-link resume"
               id="resume-link-1"
             >
@@ -119,7 +65,7 @@ function Navbar() {
                 className="resume-btn-inner"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1I8Aqgbn9b5ImgMPGbkDh9YUPbLET8EKm/view?usp=sharing",
+                    "https://drive.google.com/file/d/1cILEyGW2m9utCV_XUp9UIcttO9nUnxYd/view",
                     "_blank"
                   )
                 }
@@ -129,6 +75,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
+
         <div className="humberger" onClick={toggleNavbar}>
           {isOpen ? (
             <FaTimes size={35} style={{ color: "#fff" }} />
@@ -182,16 +129,18 @@ const DIV = styled.div`
 
   .nav-link {
     text-decoration: none;
-    color: white; /* Default color */
+    color: white;
     transition: all 0.3s ease;
+    cursor: pointer;
 
     &.active {
-      color: teal; /* Active link color */
+      color: teal;
+      font-weight: bold;
     }
 
     &:hover {
-      color: teal; /* Change color on hover */
-      transform: scale(1.05); /* Slightly enlarge for effect */
+      color: teal;
+      transform: scale(1.05);
     }
   }
 
@@ -220,25 +169,25 @@ const DIV = styled.div`
 
   @media screen and (max-width: 1024px) {
     .navbar-items {
-      flex-direction: column; /* Change to column for mobile */
-      justify-content: flex-start; /* Align items to start */
-      align-items: flex-start; /* Align items to start */
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       width: 100%;
-      height: auto; /* Auto height */
-      font-size: 1.5rem; /* Adjust font size */
+      height: auto;
+      font-size: 1.5rem;
       top: 0;
       left: -200%;
       position: absolute;
       z-index: 2;
       background: rgba(0, 0, 0, 0.9);
       transition: 0.3s;
-      padding: 20px 0; /* Add padding to the navbar */
+      padding: 20px 0;
     }
 
     .navbar-items li {
-      padding: 10px 20px; /* Add padding for individual items */
-      width: 100%; /* Full width for mobile items */
-      text-align: center; /* Center text */
+      padding: 10px 20px;
+      width: 100%;
+      text-align: center;
     }
 
     .humberger {

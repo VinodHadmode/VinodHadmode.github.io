@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import CoderImage from "../Images/Coder2.png";
@@ -16,11 +15,6 @@ function Home() {
     delaySpeed: 2000,
   });
 
-  // const handleResume = () => {
-  //   const resumeURL = `https://drive.google.com/file/d/1I8Aqgbn9b5ImgMPGbkDh9YUPbLET8EKm/view?usp=drive_link`;
-  //   window.open(resumeURL, "_blank");
-  // };
-
   return (
     <DIV id="home">
       <section className="home-container">
@@ -30,19 +24,19 @@ function Home() {
             <span>Vinod Hadmode</span>
           </h1>
           <h1>
-            a <span>{Text}</span>
+            A <span>{Text}</span>
             <Cursor cursorBlinking={false} cursorStyle="|" />
-          </h1>
+          </h1> 
 
           <a
-            href="https://drive.google.com/uc?id=1I8Aqgbn9b5ImgMPGbkDh9YUPbLET8EKm&export=download"
+            href="https://drive.google.com/uc?id=1cILEyGW2m9utCV_XUp9UIcttO9nUnxYd&export=download"
             className="resume-button"
             id="resume-link-2"
           >
             <div
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1I8Aqgbn9b5ImgMPGbkDh9YUPbLET8EKm/view?usp=sharing",
+                  "https://drive.google.com/file/d/1cILEyGW2m9utCV_XUp9UIcttO9nUnxYd/view",
                   "_blank"
                 )
               }
