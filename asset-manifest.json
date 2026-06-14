@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.90847cd5.css",
-    "main.js": "/static/js/main.29b33f95.js",
+    "main.js": "/static/js/main.00c1b071.js",
     "static/js/453.052877a7.chunk.js": "/static/js/453.052877a7.chunk.js",
+    "static/media/Profile.png": "/static/media/Profile.9cbc9a5744200b7914a5.png",
     "static/media/Coder2.png": "/static/media/Coder2.7fb43721ad994decd58b.png",
-    "static/media/Profile.jpeg": "/static/media/Profile.8bbfaaaf67d1fe4d5307.jpeg",
     "static/media/EMS-Banner.png": "/static/media/EMS-Banner.3af7253e4c7d2e8e5ead.png",
-    "static/media/ZEE5-Banner.png": "/static/media/ZEE5-Banner.a658149c13d37248542e.png",
     "static/media/SEPortfolio.png": "/static/media/SEPortfolio.ef7be100aa94319e9a22.png",
     "static/media/DotNet.png": "/static/media/DotNet.afc893ccaa20eb30299c.png",
     "static/media/TailwindCSS.png": "/static/media/TailwindCSS.fdec46372df17366cc1c.png",
     "static/media/CSharp.png": "/static/media/CSharp.e095694584811ade286e.png",
     "static/media/MySQL.png": "/static/media/MySQL.167c88550478e6f0f85c.png",
+    "static/media/Edustream-banner.png": "/static/media/Edustream-banner.458c4bb154d54319f43b.png",
     "static/media/Typescript.png": "/static/media/Typescript.239bcaac755341c67add.png",
     "static/media/Node.png": "/static/media/Node.d6153fa85318a68d9bca.png",
     "static/media/VS-Code.png": "/static/media/VS-Code.19edc3fbac1c451f289d.png",
@@ -29,11 +29,11 @@
     "static/media/Express.png": "/static/media/Express.9b344d7469dbbdc76754.png",
     "index.html": "/index.html",
     "main.90847cd5.css.map": "/static/css/main.90847cd5.css.map",
-    "main.29b33f95.js.map": "/static/js/main.29b33f95.js.map",
+    "main.00c1b071.js.map": "/static/js/main.00c1b071.js.map",
     "453.052877a7.chunk.js.map": "/static/js/453.052877a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90847cd5.css",
-    "static/js/main.29b33f95.js"
+    "static/js/main.00c1b071.js"
   ]
 }
